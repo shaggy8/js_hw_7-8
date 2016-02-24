@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 15px;
+	width: 620px;
+	border: 1px solid black;
+}
+
+.labels {
+	list-style: none;
+	margin: 5px 5px 0 5px;
+	padding: 0 0 0 5px;
+	height: 34px;
+	border: 1px solid black;
+	border-radius: 6px;
+	background: #f7fffb;
+	background: -moz-linear-gradient(top,  #f7fffb 0%, #e3f7f2 100%);
+	background: -webkit-linear-gradient(top,  #f7fffb 0%,#e3f7f2 100%);
+	background: linear-gradient(to bottom,  #f7fffb 0%,#e3f7f2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fffb', endColorstr='#e3f7f2',GradientType=0 );
+}
+
+.label {
+	float: left;
+	margin: 3px 3px 0 0;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #f7fffb;
+}
+
+.label-active {
+	border-bottom: 1px solid transparent;
+	background: #fff;
+}
+
+.label a {
+	display: block;
+	padding: 0 8px 0 8px;
+	line-height: 30px;
+	text-decoration: none;
+	color: #00496B;
+}
+
+p {
+	margin: 13px 8px 13px 8px;
+}
+
+form {
+	margin: 13px 25px 13px 25px;
+}
+
+label {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
+#first-name {
+	margin: 17px 0 17px 70px;
+	height: 25px;
+}
+
+#last-name {
+	margin: 17px 0 17px 72px;
+	height: 25px;
+}
+
+.helping {
+	display: inline-block;
+	opacity: 0;
+	margin: 8px;
+	padding: 5px 8px 5px 8px;
+	background: #BDEFA0;
+	border-radius: 13px;
+-webkit-box-shadow: 3px 3px 8px 0px rgba(75,219,142,1);
+-moz-box-shadow: 3px 3px 8px 0px rgba(75,219,142,1);
+box-shadow: 3px 3px 8px 0px rgba(75,219,142,1);
+}
+
+button {
+	margin: 25px 25px 25px 0;
+	padding: 8px;
+	height: 35px;
+	background: #BDEFA0;
+	border: none;
+	border-radius: 15px;
+}
+
+.hide {
+	display: none;
+}
