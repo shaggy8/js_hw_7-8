@@ -9,6 +9,7 @@ $(function () {
 			$('.sheet').addClass('hide');
 			$(forWhat).removeClass('hide');
 		}
+
 		event.preventDefault();
 	});
 
@@ -32,6 +33,38 @@ $(function () {
 		$('.helping').animate({
 			'opacity': 1,
 			});
+
+		event.preventDefault();
+	});
+
+	$('.ok').click(function(event) {
+		if ($('#first-name').val() == 'Анастасія' &&
+			$('#last-name').val() == 'Ніконорова') {
+
+			$('.rabbid').css({
+				'background': 'url(pic/rabbid.jpg)',
+				'box-shadow': '0px 0px 80px 8px rgba(68,51,129,1)'});
+		} else {
+			$('.rabbid').css({
+				'background': 'url(pic/rabbid.jpg) -348px 0',
+				'box-shadow': '0px 0px 80px 8px rgba(128,29,86,1)'});
+		}
+
+		$('.rabbid')
+		.css('top', function() {
+			return ($(window).height() / 2) - ($('.rabbid').height() / 2);
+		})
+		.css('left', function() {
+			return ($(window).width() / 2) - ($('.rabbid').width() / 2);
+		})
+		.slideDown('slow');
+
+		event.preventDefault();
+	});
+
+	$('.close').click(function(event) {
+		$(this).parent().slideUp('slow');
+
 		event.preventDefault();
 	});
 });
